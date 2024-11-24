@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.full-screen {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    
+}
+
+.full-screen h1{
+    font-size: 50px; 
+    margin: 0; 
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+}
+.quantity-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.quantity-btn {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+.quantity-input {
+    text-align: center;
+    width: 60px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.add-to-cart-btn {
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .quantity-wrapper {
+        flex-direction: column;
+    }
+    .quantity-btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .quantity-input {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.sec6 {
+    padding: 2rem 0;
+}
+
+.sec6 img {
+    max-width: 100px; 
+    margin-bottom: 1rem;
+}
+
+.sec6 h2 {
+    margin-bottom: 1rem;
+}
+
+.sec6 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sec6 li {
+    margin-bottom: 0.5rem;
+}
+
+.foot2 {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) { 
+    .foot1, .foot2, .row > div {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .sec6 .row {
+        display: block;
+    }
+
+    .sec6 .row > div {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) { 
+    .sec6 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec6 .row > div {
+        flex: 1 1 50%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .sec6 .row {
+        display: flex;
+    }
+
+    .sec6 .row > div {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    .full-screen h1{
+        font-size: 150px; 
+        margin: 0; 
+    }
+}
